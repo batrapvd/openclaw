@@ -20,8 +20,8 @@ describe("browser config", () => {
     expect(openclaw?.driver).toBe("openclaw");
     expect(openclaw?.cdpPort).toBe(18800);
     expect(openclaw?.cdpUrl).toBe("http://127.0.0.1:18800");
-    expect(resolved.remoteCdpTimeoutMs).toBe(1500);
-    expect(resolved.remoteCdpHandshakeTimeoutMs).toBe(3000);
+    expect(resolved.remoteCdpTimeoutMs).toBe(3000);
+    expect(resolved.remoteCdpHandshakeTimeoutMs).toBe(6000);
   });
 
   it("derives default ports from OPENCLAW_GATEWAY_PORT when unset", () => {
